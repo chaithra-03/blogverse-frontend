@@ -1,4 +1,4 @@
-import api from '../ui_components/api'
+import api from '../api'
 async function getBlogs(page){
     try{
         const response =await api.get(`blog_list?page=${page}`)

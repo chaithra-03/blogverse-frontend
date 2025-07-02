@@ -1,7 +1,7 @@
 import Badge from './Badge'
 import CardFooter from './CardFooter'
 import {Link} from 'react-router-dom'
-import BASE_URL from './api'
+import BASE_URL from '../api'
 
 const BlogCard = ({blog}) => {
 

@@ -3,7 +3,7 @@ import React, {  useEffect } from 'react'
 import { useState } from 'react'
 import Spinner from './Spinner'
 import { Navigate, useLocation } from 'react-router-dom'
-import api from './api'
+import api from '../api'
 
 const ProtectedRoute = ({children}) => {
 
