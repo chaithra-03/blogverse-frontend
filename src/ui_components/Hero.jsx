@@ -6,14 +6,16 @@ import { HiPencilAlt } from "react-icons/hi";
 import BASE_URL from '../api';
 
 const Hero = ({ userInfo, authUsername, toggleModal }) => {
-  console.log("Profile pic path:", userInfo?.profilepic);
+  console.log("BASE_URL:", BASE_URL);
+  console.log("Full image URL:", `${BASE_URL}${userInfo?.profilepic}`);
+
   return (
     <div className="padding-x py-9 max-container flex flex-col items-center justify-center gap-4 bg-[#F6F6F7] dark:bg-[#242535] rounded-md">
       <div className="flex gap-4">
         <div className="w-[70px] h-[70px] rounded-full overflow-hidden">
           
           <img
-            src={`${BASE_URL}${userInfo?.profilepic}`}
+            src={`$/{BASE_URL}${userInfo?.profilepic}`}
             className="w-[70px] h-[70px] rounded-full object-cover"
           />
         </div>
