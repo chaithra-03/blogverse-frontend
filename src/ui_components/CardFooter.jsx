@@ -1,7 +1,7 @@
 import FormatDate from "../services/FormatDate"
 import pic from "../images/pic.jpg"
 import { Link } from "react-router-dom"
-import BASE_URL from '../api';
+import {BASE_URL} from '../api';
 
 
 const CardFooter = ({blog}) => {
