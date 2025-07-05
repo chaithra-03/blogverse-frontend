@@ -3,7 +3,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 import { HiPencilAlt } from "react-icons/hi";
-import BASE_URL from '../api'
+import BASE_URL from '../api';
 
 const Hero = ({ userInfo, authUsername, toggleModal }) => {
   console.log("Profile pic path:", userInfo?.profilepic);
