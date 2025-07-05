@@ -10,6 +10,7 @@ import { useState } from "react"
 import Modal from "@/ui_components/Modal"
 import CreatePostPage from "./CreatePostPage"
 import { toast } from "react-toastify"
+import BASE_URL from '../api';
 
 
 const DetailPage = ({username, isAuthenticated}) => {
@@ -85,7 +86,7 @@ const DetailPage = ({username, isAuthenticated}) => {
 
       <div className="w-full h-[350px] my-9 overflow-hidden rounded-sm">
         <img className="w-full h-full object-cover rounded-sm" 
-        src={`http://localhost:8001${blog.featured_img}`} />
+        src={`${BASE_URL}${blog.featured_img}`} />
       </div>
       <p className="text-[16px] leading-[2rem] text-justify text-[#3B3C4A] dark:text-[#BABABF]">
         {blog.content}
