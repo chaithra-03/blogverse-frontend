@@ -15,7 +15,7 @@ const Hero = ({ userInfo, authUsername, toggleModal }) => {
         <div className="w-[70px] h-[70px] rounded-full overflow-hidden">
           
           <img
-            src={`$/{BASE_URL}${userInfo?.profilepic}`}
+            src={`${BASE_URL}${userInfo?.profilepic}`}
             className="w-[70px] h-[70px] rounded-full object-cover"
           />
         </div>
