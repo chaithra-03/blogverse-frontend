@@ -10,7 +10,7 @@ import { useState } from "react"
 import Modal from "@/ui_components/Modal"
 import CreatePostPage from "./CreatePostPage"
 import { toast } from "react-toastify"
-import BASE_URL from '../api';
+import {BASE_URL} from '../api';
 
 
 const DetailPage = ({username, isAuthenticated}) => {
