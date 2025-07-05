@@ -3,12 +3,15 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 import { HiPencilAlt } from "react-icons/hi";
+import BASE_URL from '../api'
 
 const Hero = ({ userInfo, authUsername, toggleModal }) => {
+  console.log("Profile pic path:", userInfo?.profilepic);
   return (
     <div className="padding-x py-9 max-container flex flex-col items-center justify-center gap-4 bg-[#F6F6F7] dark:bg-[#242535] rounded-md">
       <div className="flex gap-4">
         <div className="w-[70px] h-[70px] rounded-full overflow-hidden">
+          
           <img
             src={`http://localhost:8001${userInfo?.profilepic}`}
             className="w-[70px] h-[70px] rounded-full object-cover"
